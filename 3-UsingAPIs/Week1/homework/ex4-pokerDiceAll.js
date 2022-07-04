@@ -24,12 +24,12 @@ exercise file.
 
 // The line below makes the rollDie() function available to this file.
 // Do not change or remove it.
+const { reject } = require('lodash');
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  return Promise.all(dice.map(rollDie));
 }
 
 function main() {
@@ -43,3 +43,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// Dice that have not yet finished their roll continue to do so,
+// unless we added a return to our rollDie function to stop the code from execution.
