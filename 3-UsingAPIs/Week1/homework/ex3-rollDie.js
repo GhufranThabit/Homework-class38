@@ -58,3 +58,5 @@ if (process.env.NODE_ENV !== 'test') {
 }
 
 module.exports = rollDie;
+
+// the problem didn't occur any more because the promise will not continue after (reject).
