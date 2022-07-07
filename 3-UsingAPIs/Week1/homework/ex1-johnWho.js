@@ -15,19 +15,21 @@ const getAnonName = (firstName) => {
       if (firstName) {
         resolve(fullName);
       } else {
-        reject(Error("You didn't pass in a first name!"));
+        reject(new Error("You didn't pass in a first name!"));
       }
     }, 1000);
   });
 };
 
-getAnonName('John')
-  .then((fullName) => {
-    console.log(fullName);
-  })
-  .catch((errMessage) => {
-    console.log(errMessage);
-  });
+function main() {
+  getAnonName('John')
+    .then((fullName) => {
+      console.log(fullName);
+    })
+    .catch((errMessage) => {
+      console.log(errMessage);
+    });
+}
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
