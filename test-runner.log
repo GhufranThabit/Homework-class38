@@ -1,0 +1,1531 @@
+2022-07-02 02:46:10 info: ---------------------------------------
+2022-07-02 02:46:10 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-02 02:46:10 info: ---------------------------------------
+2022-07-02 02:46:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    × should exist and be executable (4 ms)
+    × should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (7 ms)
+    √ should call `new Promise()` (1 ms)
+    × should take a single argument (3 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument (1 ms)
+    × should resolve when called with a string argument (1 ms)
+    × should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should exist and be executable', () => {
+    > 48 |     expect(exported).toBeDefined();
+         |                      ^
+      49 |   });
+      50 |
+      51 |   testTodosRemoved(() => source);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:48:22)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      71 |   test('should resolve when called with a string argument', async () => {
+      72 |     expect.assertions(3);
+    > 73 |     expect(exported).toBeDefined();
+         |                      ^
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+      76 |       .mockImplementation((cb) => cb());
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:73:22)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+      84 |     expect.assertions(3);
+    > 85 |     expect(exported).toBeDefined();
+         |                      ^
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+      88 |       .mockImplementation((cb) => cb());
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:85:22)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+    > 84 |     expect.assertions(3);
+         |            ^
+      85 |     expect(exported).toBeDefined();
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:84:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 4 passed, 9 total
+Snapshots:   0 total
+Time:        2.181 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-07-02 02:46:30 error: *** Spell Checker Report ***
+
+
+2022-07-02 02:50:49 info: Disclaimer turned off
+2022-07-02 02:51:02 info: ---------------------------------------
+2022-07-02 02:51:02 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-02 02:51:02 info: ---------------------------------------
+2022-07-02 02:51:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    × should exist and be executable (5 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (2 ms)
+    √ should call `new Promise()`
+    × should take a single argument (3 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    × should resolve when called with a string argument (1 ms)
+    × should reject with an Error object when called without an argument
+
+  ● getAnonName › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should exist and be executable', () => {
+    > 48 |     expect(exported).toBeDefined();
+         |                      ^
+      49 |   });
+      50 |
+      51 |   testTodosRemoved(() => source);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:48:22)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      71 |   test('should resolve when called with a string argument', async () => {
+      72 |     expect.assertions(3);
+    > 73 |     expect(exported).toBeDefined();
+         |                      ^
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+      76 |       .mockImplementation((cb) => cb());
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:73:22)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+      84 |     expect.assertions(3);
+    > 85 |     expect(exported).toBeDefined();
+         |                      ^
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+      88 |       .mockImplementation((cb) => cb());
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:85:22)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+    > 84 |     expect.assertions(3);
+         |            ^
+      85 |     expect(exported).toBeDefined();
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:84:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 5 passed, 9 total
+Snapshots:   0 total
+Time:        1.606 s, estimated 2 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-07-02 02:51:18 error: *** Spell Checker Report ***
+
+
+2022-07-02 02:58:15 info: ---------------------------------------
+2022-07-02 02:58:15 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-02 02:58:15 info: ---------------------------------------
+2022-07-02 02:58:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    × should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (2 ms)
+    √ should call `new Promise()` (1 ms)
+    × should take a single argument (4 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    × should resolve when called with a string argument (1 ms)
+    × should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should exist and be executable', () => {
+    > 48 |     expect(exported).toBeDefined();
+         |                      ^
+      49 |   });
+      50 |
+      51 |   testTodosRemoved(() => source);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:48:22)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      71 |   test('should resolve when called with a string argument', async () => {
+      72 |     expect.assertions(3);
+    > 73 |     expect(exported).toBeDefined();
+         |                      ^
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+      76 |       .mockImplementation((cb) => cb());
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:73:22)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+      84 |     expect.assertions(3);
+    > 85 |     expect(exported).toBeDefined();
+         |                      ^
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+      88 |       .mockImplementation((cb) => cb());
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:85:22)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+    > 84 |     expect.assertions(3);
+         |            ^
+      85 |     expect(exported).toBeDefined();
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:84:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 5 passed, 9 total
+Snapshots:   0 total
+Time:        1.362 s, estimated 2 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-07-02 02:58:32 error: *** Spell Checker Report ***
+
+
+2022-07-02 03:12:52 info: ---------------------------------------
+2022-07-02 03:12:52 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-02 03:12:52 info: ---------------------------------------
+2022-07-02 03:13:00 info: All unit tests passed.
+2022-07-02 03:13:07 error: *** Spell Checker Report ***
+
+
+2022-07-02 03:16:51 info: ---------------------------------------
+2022-07-02 03:16:51 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-02 03:16:51 info: ---------------------------------------
+2022-07-02 03:16:59 info: All unit tests passed.
+2022-07-02 03:17:07 error: *** Spell Checker Report ***
+
+
+2022-07-02 03:26:52 info: ---------------------------------------
+2022-07-02 03:26:52 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-02 03:26:52 info: ---------------------------------------
+2022-07-02 03:27:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ PASS  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (11 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (3 ms)
+    √ should call `new Promise()` (2 ms)
+    √ should take a single argument (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when called with a string argument (6 ms)
+    √ should reject with an Error object when called without an argument (4 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        2.949 s, estimated 3 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "John Doe".
+
+      38 |     }, 1000);
+      39 |   });
+    > 40 | };
+         |           ^
+      41 |
+      42 | getAnonName('John')
+      43 |   .then((fullName) => {
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:187:10)
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:40:11
+2022-07-02 03:27:11 error: *** Spell Checker Report ***
+
+
+2022-07-02 03:54:01 info: -------------------------------------------------
+2022-07-02 03:54:01 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-07-02 03:54:01 info: -------------------------------------------------
+2022-07-02 03:54:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (2 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument
+    √ (9) should return a rejected promise with an Error object (2 ms)
+    × (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    × (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    √ (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 0]
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |            ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at expect (node_modules/expect/build/index.js:178:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:12)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 71 |     expect.assertions(3);
+         |            ^
+      72 |     expect(exported).toBeDefined();
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:71:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 0]
+
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+    > 84 |     return expect(promise).resolves.toEqual(
+         |            ^
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+      87 |   });
+
+      at expect (node_modules/expect/build/index.js:178:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:84:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      79 |
+      80 |   test('(99) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 81 |     expect.assertions(2);
+         |            ^
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+      84 |     return expect(promise).resolves.toEqual(
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:81:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.779 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2022-07-02 03:54:20 error: *** Spell Checker Report ***
+
+
+2022-07-02 03:55:08 info: -------------------------------------------------
+2022-07-02 03:55:08 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-07-02 03:55:08 info: -------------------------------------------------
+2022-07-02 03:55:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    √ should call new Promise()
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    √ should be a function that takes a single argument (1 ms)
+    √ (9) should return a rejected promise with an Error object (2 ms)
+    × (10) should return a promise that resolves to "This is a double digit number!" (12 ms)
+    × (99) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    √ (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 0]
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |            ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at expect (node_modules/expect/build/index.js:178:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:12)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 71 |     expect.assertions(3);
+         |            ^
+      72 |     expect(exported).toBeDefined();
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:71:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 0]
+
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+    > 84 |     return expect(promise).resolves.toEqual(
+         |            ^
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+      87 |   });
+
+      at expect (node_modules/expect/build/index.js:178:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:84:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      79 |
+      80 |   test('(99) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 81 |     expect.assertions(2);
+         |            ^
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+      84 |     return expect(promise).resolves.toEqual(
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:81:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.689 s, estimated 2 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2022-07-02 03:55:25 error: *** Spell Checker Report ***
+
+
+2022-07-02 03:56:39 info: -------------------------------------------------
+2022-07-02 03:56:39 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-07-02 03:56:39 info: -------------------------------------------------
+2022-07-02 03:56:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js (6.227 s)
+  checkDoubleDigits
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (3 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    √ (9) should return a rejected promise with an Error object (1002 ms)
+    × (10) should return a promise that resolves to "This is a double digit number!" (1012 ms)
+    × (99) should return a promise that resolves to "This is a double digit number!" (1007 ms)
+    √ (100) should return a rejected promise with an Error object (1002 ms)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 0]
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |            ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at expect (node_modules/expect/build/index.js:178:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:12)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 71 |     expect.assertions(3);
+         |            ^
+      72 |     expect(exported).toBeDefined();
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:71:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 0]
+
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+    > 84 |     return expect(promise).resolves.toEqual(
+         |            ^
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+      87 |   });
+
+      at expect (node_modules/expect/build/index.js:178:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:84:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      79 |
+      80 |   test('(99) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 81 |     expect.assertions(2);
+         |            ^
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+      84 |     return expect(promise).resolves.toEqual(
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:81:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        6.509 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2022-07-02 03:57:06 error: *** Spell Checker Report ***
+
+
+2022-07-02 03:58:47 info: -------------------------------------------------
+2022-07-02 03:58:47 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-07-02 03:58:47 info: -------------------------------------------------
+2022-07-02 03:58:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (2 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should be a function that takes a single argument (1 ms)
+    √ (9) should return a rejected promise with an Error object (3 ms)
+    × (10) should return a promise that resolves to "This is a double digit number!" (8 ms)
+    × (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    √ (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual(expected) // deep equality
+
+    Expected: StringContaining "This is a double digit number!"
+    Received: "This is double digit number!"
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |                                     ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at Object.toEqual (node_modules/expect/build/index.js:242:22)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:37)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual(expected) // deep equality
+
+    Expected: StringContaining "This is a double digit number!"
+    Received: "This is double digit number!"
+
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+    > 84 |     return expect(promise).resolves.toEqual(
+         |                                     ^
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+      87 |   });
+
+      at Object.toEqual (node_modules/expect/build/index.js:242:22)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:84:37)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        2.66 s, estimated 7 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2022-07-02 03:59:07 error: *** Spell Checker Report ***
+
+
+2022-07-02 03:59:34 info: -------------------------------------------------
+2022-07-02 03:59:34 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-07-02 03:59:34 info: -------------------------------------------------
+2022-07-02 03:59:44 info: All unit tests passed.
+2022-07-02 03:59:54 error: *** Spell Checker Report ***
+
+
+2022-07-02 04:27:37 info: ---------------------------------------
+2022-07-02 04:27:37 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-07-02 04:27:37 info: ---------------------------------------
+2022-07-02 04:27:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    √ should exist and be executable (3 ms)
+    × should have all TODO comments removed (4 ms)
+    √ should call `new Promise()`
+    × `resolve()` should be called with a one argument (5 ms)
+    √ `reject()` should be called with a one argument
+    √ should resolve when the die settles successfully (3 ms)
+    √ should reject with an Error when the die rolls off the table (2 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● rollDie › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      42 |
+      43 |   test('`resolve()` should be called with a one argument', () => {
+    > 44 |     expect(state.resolve).toBe(1);
+         |                           ^
+      45 |   });
+      46 |
+      47 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:44:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        2.284 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2022-07-02 04:27:54 error: *** Spell Checker Report ***
+
+
+2022-07-02 04:30:26 info: ---------------------------------------
+2022-07-02 04:30:26 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-07-02 04:30:26 info: ---------------------------------------
+2022-07-02 04:30:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    √ should exist and be executable (9 ms)
+    × should have all TODO comments removed (5 ms)
+    √ should call `new Promise()` (2 ms)
+    √ `resolve()` should be called with a one argument (2 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when the die settles successfully (5 ms)
+    √ should reject with an Error when the die rolls off the table (4 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        2.546 s, estimated 3 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2022-07-02 04:30:44 error: *** Spell Checker Report ***
+
+
+2022-07-04 01:05:07 info: --------------------------------------------
+2022-07-04 01:05:07 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 01:05:07 info: --------------------------------------------
+2022-07-04 01:05:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (18 ms)
+    √ should reject with an Error when a die rolls off the table (89 ms)
+
+  ● ex4-pokerDiceAll › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      57 |     expect(result).toHaveLength(5);
+      58 |
+      59 |     promise.finally(() => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:56:35)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        2.383 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2022-07-04 01:05:25 error: *** Spell Checker Report ***
+
+
+2022-07-04 01:23:57 info: --------------------------------------------
+2022-07-04 01:23:57 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 01:23:57 info: --------------------------------------------
+2022-07-04 01:24:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (2 ms)
+    × `rollDice` should not contain unneeded console.log calls (5 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (13 ms)
+    √ should reject with an Error when a die rolls off the table (99 ms)
+
+  ● ex4-pokerDiceAll › `rollDice` should not contain unneeded console.log calls
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      137 |       });
+      138 |
+    > 139 |     expect(callsConsoleLog).toBe(false);
+          |                             ^
+      140 |   });
+      141 | }
+      142 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:139:29)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      57 |     expect(result).toHaveLength(5);
+      58 |
+      59 |     promise.finally(() => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:56:35)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        2.587 s, estimated 3 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2022-07-04 01:24:17 error: *** Spell Checker Report ***
+
+
+2022-07-04 01:41:40 info: --------------------------------------------
+2022-07-04 01:41:40 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 01:41:40 info: --------------------------------------------
+2022-07-04 01:41:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (3 ms)
+    √ should use `dice.map()` (1 ms)
+    √ should use `Promise.all()` (1 ms)
+    × should resolve when all dice settle successfully (10 ms)
+    × should reject with an Error when a die rolls off the table (7 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    RangeError: Maximum call stack size exceeded
+
+      29 |
+      30 | function rollDice() {
+    > 31 |   const dice = [1, 2, 3, 4, 5];
+         |                ^
+      32 |   return Promise.all(dice.map(rollDice));
+      33 | }
+      34 |
+
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:31:16)
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:27)
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:27)
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:27)
+          at Array.map (<anonymous>)
+      at rollDice (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:27)
+          at Array.map (<anonymous>)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.921 s, estimated 3 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2022-07-04 01:41:56 error: *** Spell Checker Report ***
+
+
+2022-07-04 01:44:30 info: --------------------------------------------
+2022-07-04 01:44:30 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 01:44:30 info: --------------------------------------------
+2022-07-04 01:44:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    √ should use `Promise.all()`
+    × should resolve when all dice settle successfully (9 ms)
+    × should reject with an Error when a die rolls off the table (7 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    RangeError: Maximum call stack size exceeded
+
+      29 |
+      30 | function rollDice() {
+    > 31 |   const dice = [1, 2, 3, 4, 5];
+         |                ^
+      32 |   Promise.all(dice.map(rollDice));
+      33 | }
+      34 |
+
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:31:16)
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:20)
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:20)
+          at Array.map (<anonymous>)
+      at map (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:20)
+          at Array.map (<anonymous>)
+      at rollDice (3-UsingAPIs/Week1/homework/ex4-pokerDiceAll.js:32:20)
+          at Array.map (<anonymous>)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.626 s, estimated 2 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2022-07-04 01:44:44 error: *** Spell Checker Report ***
+
+
+2022-07-04 01:57:52 info: --------------------------------------------
+2022-07-04 01:57:52 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 01:57:52 info: --------------------------------------------
+2022-07-04 01:57:59 info: All unit tests passed.
+2022-07-04 01:58:08 error: *** Spell Checker Report ***
+
+
+2022-07-04 02:50:31 info: --------------------------------------------
+2022-07-04 02:50:31 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-04 02:50:31 info: --------------------------------------------
+2022-07-04 02:50:40 info: All unit tests passed.
+2022-07-04 02:50:48 error: *** Spell Checker Report ***
+
+
+2022-07-04 03:40:15 info: ----------------------------------------------
+2022-07-04 03:40:15 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 03:40:15 info: ----------------------------------------------
+2022-07-04 03:40:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (3 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    × should resolve when all dice settle successfully (46 ms)
+    √ should reject with an Error when a die rolls off the table (82 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 2
+    Received array:  ["NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        2.289 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-07-04 03:40:33 error: *** Spell Checker Report ***
+
+
+2022-07-04 03:44:03 info: ----------------------------------------------
+2022-07-04 03:44:03 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 03:44:03 info: ----------------------------------------------
+2022-07-04 03:44:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (3 ms)
+    × should have all TODO comments removed (3 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    × should resolve when all dice settle successfully (87 ms)
+    √ should reject with an Error when a die rolls off the table (93 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 4
+    Received array:  ["NINE", "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        1.936 s, estimated 3 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-07-04 03:44:18 error: *** Spell Checker Report ***
+
+
+2022-07-04 03:44:39 info: ----------------------------------------------
+2022-07-04 03:44:39 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 03:44:39 info: ----------------------------------------------
+2022-07-04 03:44:46 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    × should resolve when all dice settle successfully (107 ms)
+    √ should reject with an Error when a die rolls off the table (100 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 4
+    Received array:  ["NINE", "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.87 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-07-04 03:44:56 error: *** Spell Checker Report ***
+
+
+2022-07-04 03:47:07 info: ----------------------------------------------
+2022-07-04 03:47:07 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 03:47:07 info: ----------------------------------------------
+2022-07-04 03:47:14 info: All unit tests passed.
+2022-07-04 03:47:21 error: *** Spell Checker Report ***
+
+
+2022-07-04 05:02:17 info: ----------------------------------------------
+2022-07-04 05:02:17 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-04 05:02:17 info: ----------------------------------------------
+2022-07-04 05:02:28 info: All unit tests passed.
+2022-07-04 05:02:40 error: *** Spell Checker Report ***
+
+
+2022-07-04 05:06:34 info: ---------------------------------------
+2022-07-04 05:06:34 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-04 05:06:34 info: ---------------------------------------
+2022-07-04 05:06:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ PASS  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    √ should call `new Promise()`
+    √ should take a single argument
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when called with a string argument (3 ms)
+    √ should reject with an Error object when called without an argument (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        1.381 s, estimated 3 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "John Doe".
+
+      25 |   .then((fullName) => {
+      26 |     console.log(fullName);
+    > 27 |   })
+         |     ^
+      28 |   .catch((errMessage) => {
+      29 |     console.log(errMessage);
+      30 |   });
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:187:10)
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:27:11
+2022-07-04 05:06:50 error: *** Spell Checker Report ***
+
+
+2022-07-04 05:07:21 info: -------------------------------------------------
+2022-07-04 05:07:21 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-07-04 05:07:21 info: -------------------------------------------------
+2022-07-04 05:07:27 info: All unit tests passed.
+2022-07-04 05:07:35 error: *** Spell Checker Report ***
+
+
+2022-07-07 09:58:55 info: ---------------------------------------
+2022-07-07 09:58:55 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-07 09:58:55 info: ---------------------------------------
+2022-07-07 09:59:06 info: All unit tests passed.
+2022-07-07 09:59:21 error: *** Spell Checker Report ***
+
+
+2022-07-07 10:01:33 info: -------------------------------------------------
+2022-07-07 10:01:33 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-07-07 10:01:33 info: -------------------------------------------------
+2022-07-07 10:01:43 info: All unit tests passed.
+2022-07-07 10:01:56 error: *** Spell Checker Report ***
+
+
+2022-07-07 10:24:18 info: --------------------------------------------
+2022-07-07 10:24:18 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-07 10:24:18 info: --------------------------------------------
+2022-07-07 10:24:29 info: All unit tests passed.
+2022-07-07 10:24:42 error: *** Spell Checker Report ***
+
+
+2022-07-07 10:31:48 info: --------------------------------------------
+2022-07-07 10:31:48 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-07-07 10:31:48 info: --------------------------------------------
+2022-07-07 10:31:58 info: All unit tests passed.
+2022-07-07 10:32:07 error: *** Spell Checker Report ***
+
+
+2022-07-07 10:32:26 info: ----------------------------------------------
+2022-07-07 10:32:26 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-07-07 10:32:26 info: ----------------------------------------------
+2022-07-07 10:32:32 info: All unit tests passed.
+2022-07-07 10:32:40 error: *** Spell Checker Report ***
+
+
+2022-07-07 11:58:49 info: ---------------------------------------
+2022-07-07 11:58:49 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-07 11:58:49 info: ---------------------------------------
+2022-07-07 11:58:59 info: All unit tests passed.
+2022-07-07 11:59:09 error: *** Spell Checker Report ***
+
+
+2022-07-08 11:22:45 info: ---------------------------------------
+2022-07-08 11:22:45 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-07-08 11:22:45 info: ---------------------------------------
+2022-07-08 11:23:02 info: All unit tests passed.
+2022-07-08 11:23:31 error: *** Spell Checker Report ***
+
+

@@ -1,0 +1,40 @@
+{
+  "node": "v16.14.2",
+  "system": {
+    "manufacturer": "LENOVO",
+    "model": "80XG"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Core™ i3-6006U",
+    "speed": 2
+  },
+  "memory": "4 GB",
+  "osInfo": {
+    "platform": "Windows",
+    "distro": "Microsoft Windows 10 Home",
+    "release": "10.0.19044"
+  },
+  "vscodeInfo": {
+    "version": "1.68.1",
+    "extensions": [
+      "aaron-bond.better-comments",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-footnotes",
+      "bierner.markdown-mermaid",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "hnw.vscode-auto-open-markdown-preview",
+      "msjsdiag.debugger-for-chrome",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker"
+    ],
+    "userSettings": {}
+  }
+}
