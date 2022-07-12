@@ -1,1 +1,34 @@
 /* add your styling here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+.btn {
+  display: flex;
+  background-color: rgb(233, 247, 247);
+  color: rgb(106, 31, 110);
+  font-size: 30px;
+  padding: 20px;
+  margin-right: 10px;
+  border: rgb(239, 226, 226);
+}
+.select {
+  display: flex;
+  color: rgb(237, 87, 207);
+  border: 30px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.current-poke {
+  height: 15rem;
+}
