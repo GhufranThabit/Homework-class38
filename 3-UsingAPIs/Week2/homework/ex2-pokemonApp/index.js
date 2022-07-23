@@ -53,7 +53,7 @@ function fetchAndPopulatePokemons() {
 
       results.forEach((result) => {
         const option = document.createElement('option');
-        option.value = results.indexOf(result) + 1;
+        option.value = result.url;
         option.textContent = result.name;
         select.appendChild(option);
       });
@@ -65,16 +65,14 @@ function fetchAndPopulatePokemons() {
   });
 }
 
-async function fetchImage(value) {
+async function fetchImage(e) {
   const changeImage = document.querySelector('.current-poke');
   if (changeImage) {
     changeImage.remove();
   }
-
-  const pokeUrl = `https://pokeapi.co/api/v2/pokemon/${value.currentTarget.value}`;
+  const url = e.currentTarget.value;
   try {
-    const imgData = await fetchData(pokeUrl);
-    console.log(imgData);
+    const imgData = await fetchData(url);
     const img = document.createElement('img');
     img.className = 'current-poke';
     img.src = imgData.sprites.front_shiny;
