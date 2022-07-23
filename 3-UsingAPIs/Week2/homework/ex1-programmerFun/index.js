@@ -31,13 +31,13 @@ async function requestData(url) {
 function renderImage(data) {
   const img = document.createElement('img');
   img.src = data.img;
-  img.alt = 'fun-img';
+  img.alt = data.alt;
   document.body.appendChild(img);
 }
 
 function renderError(error) {
   const errorElement = document.createElement('h1');
-  errorElement.textContent = error;
+  errorElement.textContent = error.message;
   document.body.appendChild(errorElement);
 }
 
